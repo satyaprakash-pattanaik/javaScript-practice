@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Fluffy",
+    "kittens": [
+      { "name": "Milo", "gender": "m" },
+      { "name": "Luna", "gender": "f" }
+    ]
+  },
+  {
+    "name": "Misty",
+    "kittens": [
+      { "name": "Leo", "gender": "m" },
+      { "name": "Nala", "gender": "f" },
+      { "name": "Simba", "gender": "m" }
+    ]
+  }
+]

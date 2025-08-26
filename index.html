@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dom Learning</title>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body>
+    <h3>Dom Learning</h3>
+    <div class="bg-black" id="app">
+        <!-- <button id="btn">Change</button>
+       <script type="text/javascript">
+        const app =document.getElementById('app');
+        const header = document.createElement('h1');
+        const text = 'HI , I am Satyaprakash Pattanaik';
+        const headerContent=document.createTextNode(text);
+        header.appendChild(headerContent);
+        app.appendChild(header)
+        const btn=document.getElementById('btn');
+        const changetext='Hello From Satya';
+        btn.addEventListener('click',function() {
+             header.textContent = (header.textContent === text) ? changetext : text;
+        })
+
+        //using arrow function
+
+       </script>
+       <div>
+        <h1 id="count">Count : 0</h1>
+        <button id="countbtn">click</button>
+       </div>
+       <script src="arrow.js"></script> -->
+       
+    </div>
+    <!-- React 1 -->
+
+    <!-- <script type="text/jsx">
+        const domNode = document.getElementById('app');
+        const root = ReactDOM.createRoot(domNode);
+        root.render(<h1>Hi, i'm Satya</h1>);
+    </script> -->
+
+    <!-- 1st react component and nesting of components -->
+
+    <!-- <script type="text/jsx">
+   
+      function Header() {
+        return <h1>Develop. Preview. Ship.</h1>;
+      }
+ 
+    function HomePage() {
+        return (
+            <div>
+            {/* Nesting the Header component */}
+            <Header />
+            </div>
+        );
+    }
+ 
+    const root = ReactDOM.createRoot(app);
+    root.render(<Header />);
+    </script> -->
+
+    <!-- Rendering array data through props and map using arrow function -->
+
+    <!-- <script type="text/jsx">
+
+        function Header() {
+            return <h1>Develop. Preview. Ship.</h1>;
+        }
+
+        function HomePage() {
+            const names =['satya','sagar','rajalaxmi','aditi'];
+
+            return (
+                <div>
+                    <Header title="Team members"/>
+                    <ul>
+                        {names.map((name)=> (
+                            <li key={name}>{name}</li> 
+                         ))}
+                    </ul>
+                </div>
+            )
+        }
+        const root = ReactDOM.createRoot(app);
+        root.render(<HomePage />);
+    </script> -->
+
+    <p class="one"></p>
+    <p class="two"></p>
+
+    <script src="jsonPractice.js"></script>
+
+</body>
+</html>
