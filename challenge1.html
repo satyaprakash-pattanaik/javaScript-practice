@@ -4,6 +4,9 @@
   Far far away, behind the word mountains, far from the countries Vokalia and
   Consonantia, there live the blind texts. Separated they live in Bookmarksgrove
   right at the coast of the Semantics, a large language ocean.
+  This box has a height and a width. This means that if there is too much
+  content to be displayed within the assigned height, there will be an overflow
+  situation. If overflow is set to hidden then any overflow will not be visible.
 </p>
 
 <p>
@@ -40,6 +43,7 @@ h2 {
 .job-title {
   color: #999999;
   font-weight: bold;
+  background-color: black;
 }
 
 a:link,
@@ -59,7 +63,8 @@ a:hover {
   margin: 40px;
   width: 300px;
   height: 150px;
-}
+  overflow: auto;
+} 
 
 .alternate {
   box-sizing: border-box;

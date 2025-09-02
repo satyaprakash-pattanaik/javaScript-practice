@@ -1,0 +1,142 @@
+
+:root {
+  --paper-max-width: 800px;
+  --paper-padding: 160px;
+  --paper-bg: #ffffff;
+  --paper-top-border: #9a1b1b;
+  --paper-bottom-border: #9a1b1b;
+  --ink: #1a1a1a;
+
+  --img-top: url("top-image.png");
+  --img-bottom: url("bottom-image.png");
+  --img-logo: url("logo.png");
+}
+
+html {
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  color: var(--ink);
+}
+*, *::before, *::after { box-sizing: inherit; }
+
+body {
+  margin: 0;
+  background: #f5f5f7;
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  padding: 16px;
+}
+
+.letter {
+  width: min(100%, var(--paper-max-width));
+  background: var(--paper-bg);
+  border-top: 1mm solid var(--paper-top-border);
+  border-bottom: 1mm solid var(--paper-bottom-border);
+  border-left: 0;
+  border-right: 0;
+  padding: var(--paper-padding);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+}
+
+
+.letter {
+  background-image: var(--img-top);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: contain;
+  background-color: var(--paper-bg);
+}
+
+
+.letter {
+ 
+  background-image:
+    var(--img-top),
+    var(--img-bottom),
+    linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.14) 0%,
+      rgba(0, 0, 0, 0.08) 4%,
+      rgba(0, 0, 0, 0.00) 16%,
+      rgba(0, 0, 0, 0.00) 84%,
+      rgba(0, 0, 0, 0.08) 96%,
+      rgba(0, 0, 0, 0.14) 100%
+    );
+  background-repeat:
+    no-repeat,
+    no-repeat,
+    no-repeat;
+  background-position:
+    top center,
+    bottom center,
+    0 0;
+  background-size:
+    contain,
+    contain,
+    100% 100%;
+  background-attachment:
+    scroll,
+    scroll,
+    scroll;
+}
+
+/* Header with logo */
+.letterhead {
+  margin-bottom: 24px;
+}
+
+/* The logo as a background image on h1 */
+.logo {
+
+  position: relative;
+  width: 160px;
+  height: 160px;
+  margin: 0;
+  background-image: var(--img-logo);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 50%; 
+  filter: drop-shadow(0 6px 10px rgba(0,0,0,0.25));
+  text-indent: -9999px;
+  overflow: hidden;
+}
+
+/* Alternative cross-browser shadow technique:
+   Comment out filter above and use a pseudo-element “halo” that
+   follows the round shape. Not as perfect as drop-shadow but robust. */
+/*
+.logo {
+  filter: none;
+}
+.logo::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.28);
+  pointer-events: none;
+}
+*/
+
+.content {
+  line-height: 1.7;
+  font-size: 18px;
+}
+
+.content p {
+  margin: 0 0 1em;
+  max-width: 70ch;
+}
+
+/* Footer line */
+.footer {
+  margin-top: 40px;
+  font-size: 14px;
+  color: #444;
+}
+.footer p {
+  margin: 0;
+}
