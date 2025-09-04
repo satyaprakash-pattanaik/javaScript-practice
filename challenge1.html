@@ -22,11 +22,34 @@
   <li>Tel: 123 45678</li>
 </ul>
 
+<div class="container">
+  <div>One</div>
+  <div>Two</div>
+  <div>Three</div>
+  <div>Four</div>
+  <div>Five</div>
+  <div>Six</div>
+  <div>Seven</div>
+</div>
+
 <style>
     body {
   font-family: Arial, Helvetica, sans-serif;
   padding: 10px;
   margin: 20px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 3fr 1fr 1fr;
+  gap: 10px;
+}
+
+.container > div {
+  border-radius: 5px;
+  padding: 10px;
+  background-color: rgb(207 232 220);
+  border: 2px solid rgb(79 185 227);
 }
 
 h1 {
@@ -55,7 +78,6 @@ a:hover {
   text-decoration: none;
 }
 
-/* box model */
 .box {
   border: 5px solid rebeccapurple;
   background-color: lightgray;

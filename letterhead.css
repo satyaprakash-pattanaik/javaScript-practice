@@ -1,7 +1,7 @@
 
 :root {
-  --paper-max-width: 800px;
-  --paper-padding: 160px;
+  --paper-max-width: 700px;
+  --paper-padding: 180px;
   --paper-bg: #ffffff;
   --paper-top-border: #9a1b1b;
   --paper-bottom-border: #9a1b1b;
@@ -82,12 +82,11 @@ body {
     scroll;
 }
 
-/* Header with logo */
+
 .letterhead {
-  margin-bottom: 24px;
+  margin-bottom: 24px;  
 }
 
-/* The logo as a background image on h1 */
 .logo {
 
   position: relative;
@@ -97,17 +96,14 @@ body {
   background-image: var(--img-logo);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: cover;     
   border-radius: 50%; 
   filter: drop-shadow(0 6px 10px rgba(0,0,0,0.25));
   text-indent: -9999px;
   overflow: hidden;
 }
+ 
 
-/* Alternative cross-browser shadow technique:
-   Comment out filter above and use a pseudo-element “halo” that
-   follows the round shape. Not as perfect as drop-shadow but robust. */
-/*
 .logo {
   filter: none;
 }
@@ -119,7 +115,7 @@ body {
   box-shadow: 0 6px 12px rgba(0,0,0,0.28);
   pointer-events: none;
 }
-*/
+
 
 .content {
   line-height: 1.7;
